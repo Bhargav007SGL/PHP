@@ -1,0 +1,40 @@
+-- Table: public.image_demo
+
+-- DROP TABLE public.image_demo;
+
+CREATE TABLE IF NOT EXISTS public.image_demo
+(
+    ogc_fid bigint NOT NULL DEFAULT nextval('image_demo_ogc_fid_seq'::regclass),
+    "Ser_no" character varying(260) COLLATE pg_catalog."default",
+    "SensorName" character varying(260) COLLATE pg_catalog."default",
+    "TypeofSensor_MSSorPan" character varying(260) COLLATE pg_catalog."default",
+    "DOP" character varying(260) COLLATE pg_catalog."default",
+    "Year" character varying(260) COLLATE pg_catalog."default",
+    "GeneraArea_FocusArea" character varying(260) COLLATE pg_catalog."default",
+    "GeneralAreaGR" character varying(260) COLLATE pg_catalog."default",
+    "MapRef" character varying(260) COLLATE pg_catalog."default",
+    "FormationDetail" character varying(260) COLLATE pg_catalog."default",
+    "YearofAcquistion" character varying(260) COLLATE pg_catalog."default",
+    "UL_Long" character varying(260) COLLATE pg_catalog."default",
+    "UL_Lat" character varying(260) COLLATE pg_catalog."default",
+    "UR_Lat" character varying(260) COLLATE pg_catalog."default",
+    "UR_Long" character varying(260) COLLATE pg_catalog."default",
+    "LR_Long" character varying(260) COLLATE pg_catalog."default",
+    "LR_Lat" character varying(260) COLLATE pg_catalog."default",
+    "LL_Long" character varying(260) COLLATE pg_catalog."default",
+    "LL_Lat" character varying(260) COLLATE pg_catalog."default",
+    "CenterPointLong_DMSor" character varying(260) COLLATE pg_catalog."default",
+    "CenterPointLat_DMSor" character varying(260) COLLATE pg_catalog."default",
+    "ImageName" character varying(260) COLLATE pg_catalog."default",
+    "ImagePath" character varying(260) COLLATE pg_catalog."default",
+    "Remarks" character varying(260) COLLATE pg_catalog."default",
+    ascii_id bigint,
+    CONSTRAINT image_demo_pkey PRIMARY KEY (ogc_fid)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.image_demo
+    OWNER to igis;
