@@ -1,0 +1,76 @@
+PGDMP
+                          z            phpdemo    9.1.9    10.11     E           0    0    ENCODING    ENCODING        SET client_encoding = 'UTF8';
+                       false            F           0    0 
+   STDSTRINGS 
+   STDSTRINGS     (   SET standard_conforming_strings = 'on';
+                       false            G           0    0 
+   SEARCHPATH 
+   SEARCHPATH     8   SELECT pg_catalog.set_config('search_path', '', false);
+                       false            H           1262    238615    phpdemo    DATABASE     ‡   CREATE DATABASE phpdemo WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'English_India.1252' LC_CTYPE = 'English_India.1252';
+    DROP DATABASE phpdemo;
+             igis    false                        2615    2200    public    SCHEMA        CREATE SCHEMA public;
+    DROP SCHEMA public;
+             postgres    false            I           0    0 
+   SCHEMA public    COMMENT     6   COMMENT ON SCHEMA public IS 'standard public schema';
+                  postgres    false    6            J           0    0 
+   SCHEMA public    ACL     ¢   REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+                  postgres    false    6                        3079    11639    plpgsql 	   EXTENSION     ?   CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+    DROP EXTENSION plpgsql;
+                  false            K           0    0    EXTENSION plpgsql    COMMENT     @   COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+                       false    1            ¤            1259    238621 
+   image_demo    TABLE       CREATE TABLE public.image_demo (
+    ogc_fid bigint NOT NULL,
+    "Ser_no" character varying(260),
+    "SensorName" character varying(260),
+    "TypeofSensor_MSSorPan" character varying(260),
+    "DOP" character varying(260),
+    "Year" character varying(260),
+    "GeneraArea_FocusArea" character varying(260),
+    "GeneralAreaGR" character varying(260),
+    "MapRef" character varying(260),
+    "FormationDetail" character varying(260),
+    "YearofAcquistion" character varying(260),
+    "UL_Long" character varying(260),
+    "UL_Lat" character varying(260),
+    "UR_Lat" character varying(260),
+    "UR_Long" character varying(260),
+    "LR_Long" character varying(260),
+    "LR_Lat" character varying(260),
+    "LL_Long" character varying(260),
+    "LL_Lat" character varying(260),
+    "CenterPointLong_DMSor" character varying(260),
+    "CenterPointLat_DMSor" character varying(260),
+    "ImageName" character varying(260),
+    "ImagePath" character varying(260),
+    "Remarks" character varying(260),
+    ascii_id bigint
+);
+    DROP TABLE public.image_demo;
+       public         igis    false    6            £            1259    238619    image_demo_ogc_fid_seq    SEQUENCE        CREATE SEQUENCE public.image_demo_ogc_fid_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+ -   DROP SEQUENCE public.image_demo_ogc_fid_seq;
+       public       igis    false    164    6            L           0    0    image_demo_ogc_fid_seq    SEQUENCE OWNED BY     Q   ALTER SEQUENCE public.image_demo_ogc_fid_seq OWNED BY public.image_demo.ogc_fid;
+            public       igis    false    163            ¢            1259    238616    insert    TABLE     2   CREATE TABLE public.insert (
+    "Name" "char"
+);
+    DROP TABLE public.insert;
+       public         igis    false    6            Ø           2604    238624    image_demo ogc_fid    DEFAULT     x   ALTER TABLE ONLY public.image_demo ALTER COLUMN ogc_fid SET DEFAULT nextval('public.image_demo_ogc_fid_seq'::regclass);
+ A   ALTER TABLE public.image_demo ALTER COLUMN ogc_fid DROP DEFAULT;
+       public       igis    false    164    163    164            B          0    238621 
+   image_demo 
+   TABLE DATA               {  COPY public.image_demo (ogc_fid, "Ser_no", "SensorName", "TypeofSensor_MSSorPan", "DOP", "Year", "GeneraArea_FocusArea", "GeneralAreaGR", "MapRef", "FormationDetail", "YearofAcquistion", "UL_Long", "UL_Lat", "UR_Lat", "UR_Long", "LR_Long", "LR_Lat", "LL_Long", "LL_Lat", "CenterPointLong_DMSor", "CenterPointLat_DMSor", "ImageName", "ImagePath", "Remarks", ascii_id) FROM stdin;
+    public       igis    false    164   Ì       @          0    238616    insert 
+   TABLE DATA               (   COPY public.insert ("Name") FROM stdin;
+    public       igis    false    162   d       M           0    0    image_demo_ogc_fid_seq    SEQUENCE SET     E   SELECT pg_catalog.setval('public.image_demo_ogc_fid_seq', 23, true);
+            public       igis    false    163            Ú           2606    238629    image_demo image_demo_pkey 
+   CONSTRAINT     ]   ALTER TABLE ONLY public.image_demo
+    ADD CONSTRAINT image_demo_pkey PRIMARY KEY (ogc_fid);
+ D   ALTER TABLE ONLY public.image_demo DROP CONSTRAINT image_demo_pkey;
+       public         igis    false    164            B   ˆ   xœ­­A„õÌ‹àHÛ½°ä4OpfCžŸ;j3doÛŠŠo>1Žù¼õN·üºæ÷ò2Úélu15®.v­…=žÀF#ÆxÀ·àq”„›F\#¡‘¤‘N#½FŒÑåú¯]d6–À0ì0]îäåùoáU©¨J¥šÔ¼'ù¬X      @      xœKäJ„B'0ŒÑãââ .¤     
