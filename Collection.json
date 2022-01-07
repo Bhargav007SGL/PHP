@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "d92fa52c-af64-4f64-bcc7-04f5078bfa29",
+		"name": "ImageDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.1.221:1213/php/insert.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ascii_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "TypeofSensor",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Ser_No",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "SensorName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "DOP",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Year",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "GeneraArea_FocusArea",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "GeneralAreaGR",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "MapRef",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "FormationDetail",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "YearofAcquistion",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UL_Long",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UL_Lat",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UR_Long",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UR_Lat",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "LR_Long",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "LL_Lat",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "LR_Lat",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "LL_Long",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "CenterPointLong",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "CenterPointLat",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ImageName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ImagePath",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Remarks",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.221:1213/php/insert.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"221"
+					],
+					"port": "1213",
+					"path": [
+						"php",
+						"insert.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
